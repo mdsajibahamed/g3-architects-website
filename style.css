@@ -1,7 +1,128 @@
 /* work sens font from google  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto+Mono:ital,wght@1,200&family=Work+Sans:wght@400;600;700;800&display=swap');
 
-
 *{
 font-family: 'Work Sans', sans-serif;
 }
+/* header styles  */
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 200px;
+}
+.nav-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+   
+}
+nav li{
+    list-style: none;
+    text-decoration:none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500;  
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+}
+/* banner  */
+ .banner-content{
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#727272;
+}
+.banner-description{
+    color: #727272;
+
+}
+.btn-primary{
+    background-color: orange;
+    color: #ffff;
+    border-radius: 20px;
+    padding: 20px 25px;
+    border: 2px solid white;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+/* responsive media queryes  */
+@media screen and (max-width:576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .btn-primary{
+        background-color: rgb(0, 89, 255);
+        color: #ffff;
+        border-radius: 20px;
+        padding: 20px 25px;
+        border: 2px solid white;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+    
+}
+/* medium  devices  */
+@media screen and (min-width:576px) and (max-width:992px){
+    header{
+        padding: 50px;
+    }
+    nav{
+        /* padding: 50px; */
+        flex-direction: column;
+    }
+   
+}
+
+/* main styles  */
+main{
+    max-width: 1440px;
+    margin: 0px auto ;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+}
+.team-content{
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.team-title{
+    font-size: 3rem;
+}
+.team-title .quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .features{
+    color: #ff900E;
+    font-weight: 700;
+
+}
+ 
