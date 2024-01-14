@@ -96,7 +96,53 @@ main{
     font-weight: 700;
 
 }
+/* features section styles  */
+.features-light{
+    border-left: 5px solid #ff900E;
+    padding-left: 20px;
 
+}
+.features-img .ten-years-badge{
+    color: #FFF;
+    background-color:#ff900E ;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+    /* left: 500px; */
+}
+.features-img .ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.features-img .ten-years-badge p{
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.features-img img{
+    height: 90%;
+    margin-left: 80px;
+}
+.features{
+    display: flex;
+    margin-top: 80px;
+    gap: 50px;
+}
+ .features .features-card{
+    padding: 30px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+ .features .features-header{
+ font-size: 1.4rem;
+ font-weight: 400;
+ color: #727272;
+}
 /* facts section  */
 .facts-card-container{
     display: flex;
@@ -145,12 +191,28 @@ main{
     width: 165px;
     
 }
+
+
+
+/* footer  */
+
+footer{
+    margin-bottom: 500px;
+    padding: 30px 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    
+    background-color:antiquewhite;
+    text-align: center;
+}
+
 /* responsive media queryes  */
 @media screen and (max-width:576px){
     header{
         padding: 20px;
     }
-    nav, .team-container, .facts-card-container, .sponsors-img-container{
+    nav, .team-container, .facts-card-container, .sponsors-img-container, .features{
         flex-direction: column;
     }
     .btn-primary{
@@ -175,13 +237,49 @@ main{
         padding: 0px 40px;
 
     }
+
     .some-facts{
         margin-left: 30px;
     }
     .margin-left{
         padding: 0px 30px;
     }
+    .features-img img{
+        width: 90%;
+        margin-left: 15px;
 
+    }
+    .ten-years-badge{
+
+        position: static;
+        max-width: 100%;
+        margin: 30px;
+    }
+    .features-img .ten-years-badge{
+        color: #FFF;
+        background-color:#ff900E ;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        padding: 40px;
+       
+        position: relative;
+        bottom: 100px;
+        right:35px ;
+        top: 0px;
+        margin-top: 0px;
+    }
+    .footer{
+        margin-bottom: 200px;
+        padding: 0px 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+        width: 100%;
+        
+        background-color:antiquewhite;
+        text-align: center;
+    }
 
     
 
@@ -196,6 +294,9 @@ main{
         /* padding: 50px; */
         flex-direction: column;
     }
+    .features{
+        flex-direction: column;
+    }
     .team-img-container{
         margin-top: 20px;
     }
@@ -208,6 +309,17 @@ main{
     .some-facts{
         margin-left: 70px;
     }
+    .features-img img{
+        /* width: 50%; */
+        /* margin-left: 30px; */
+       
+
+    }
+    .features .features-header, p{
+        padding: 50px;
+        border-left: none;
+    }
+
    
 }
 
